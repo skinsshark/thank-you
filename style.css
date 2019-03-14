@@ -1,0 +1,83 @@
+/* SVG SHIT */
+.st0{fill:none;stroke:#FF36B3;stroke-miterlimit:10;}
+.st1{fill:#FF36B3;stroke:#FF36B3;stroke-miterlimit:10;}
+.st2{fill:#FF36B3;}
+.st3{fill:#FFFFFF;stroke:#FF36B3;stroke-miterlimit:10;}
+.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'Concert One', cursive;
+}
+
+@media only screen and (max-width: 767px) {
+    p {
+      font-size: 1rem;
+    }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main {
+  width: 50vw;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    height: 50vh;
+  }
+
+  main {
+    width: 80vw;
+  }
+}
+
+aside,
+aside.right {
+  position: absolute;
+  right: 10vw;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1443ff;
+}
+
+aside.left {
+  left: 10vw;
+  right: auto;
+  color: #14ffbc;
+}
+
+aside p,
+aside.right p {
+  text-align: center;
+  letter-spacing: 2px;
+  transform: rotate(-90deg);
+}
+
+aside.left p {
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 767px) {
+  aside.left,
+  aside.right {
+    display: none;
+  }
+}
