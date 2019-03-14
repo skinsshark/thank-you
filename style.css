@@ -1,9 +1,6 @@
 /* SVG SHIT */
 .st0{fill:none;stroke:#FF36B3;stroke-miterlimit:10;}
 .st1{fill:#FF36B3;stroke:#FF36B3;stroke-miterlimit:10;}
-.st2{fill:#FF36B3;}
-.st3{fill:#FFFFFF;stroke:#FF36B3;stroke-miterlimit:10;}
-.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 
 * {
   box-sizing: border-box;
@@ -29,21 +26,64 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 main {
-  width: 50vw;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
 }
 
+#cube {
+  width: 500px; /* can change */
+  height: 500px; /* can change */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.face {
+  opacity: 0.2;
+}
+
+.show-front #front.face,
+.show-right #right.face,
+.show-back #back.face,
+.show-left #left.face,
+.show-top #top.face,
+.show-bottom #bottom.face {
+  opacity: 1;
+}
+
+svg {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+svg#front  { transform: rotateY(  0deg) translateZ(100px); }
+svg#right  { transform: rotateY( 90deg) translateZ(100px); }
+svg#back   { transform: rotateY(180deg) translateZ(100px); }
+svg#left   { transform: rotateY(-90deg) translateZ(100px); }
+svg#top    { transform: rotateX( 90deg) translateZ(100px); }
+svg#bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+#cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+#cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+#cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+#cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+#cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+#cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
+
 @media only screen and (max-width: 767px) {
-  body {
+  /* body {
     height: 50vh;
   }
 
   main {
     width: 80vw;
-  }
+  } */
 }
 
 aside,
