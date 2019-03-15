@@ -1,19 +1,12 @@
 /* SVG SHIT */
-.st0 {
-  fill: none;
-  stroke: #FF36B3;
-  stroke-miterlimit: 10;
-}
+.st0{fill:#FFFFFF;stroke:#FF36B3;stroke-miterlimit:10;}
+.st1{fill:#FF36B3;stroke:#FF36B3;stroke-miterlimit:10;}
+.st2{fill:#FF36B3;}
 
-.st1 {
-  fill: #FF36B3;
-  stroke: #FF36B3;
-  stroke-miterlimit: 10;
-}
-
-.st2 {
-  fill: #FF36B3;
-}
+.mv-to-dir-id .st0{fill:#FFDF1D;stroke:#2784B8;stroke-miterlimit:10;}
+.mv-to-dir-id .st1{fill:#FFFFFF;stroke:#2784B8;stroke-miterlimit:10;}
+.mv-to-dir-id .st2{fill:#2784B8;stroke:#2784B8;stroke-miterlimit:10;}
+.mv-to-dir-id .st3{fill:#2784B8;}
 
 * {
   box-sizing: border-box;
@@ -52,7 +45,7 @@ body {
 main {
   width: 500px;
   height: 500px;
-  perspective: 1000px;
+  /* perspective: 1000px; */
 }
 
 #cube {
@@ -70,6 +63,7 @@ main {
 .show-top #top,
 .show-bottom #bottom {
   opacity: 1;
+  /* background-color: #fff; */
 }
 
 svg {
