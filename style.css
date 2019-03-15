@@ -11,8 +11,20 @@
   stroke-miterlimit: 10;
 }
 
+.st2 {
+  fill: #FF36B3;
+}
+
 * {
   box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+
+::selection {
+  background: transparent;
 }
 
 p {
