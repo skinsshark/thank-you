@@ -21,12 +21,12 @@
 
     <title>thank you, please come again</title>
   </head>
-  <body>
+  <body onload="switchFace()">
     <div class="wrapper">
       <main> <!-- scene -->
         <div id="cube"> <!-- cube -->
           <!-- front -->
-          <svg class="face" id="front" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg id="front" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
              <g id="Layer_6">
              	<polygon class="st0" points="66.5,364.5 13.5,364.5 13.5,379.5 30.5,379.5 30.5,421.5 49.5,421.5 49.5,379.5 66.5,379.5 	"/>
@@ -157,7 +157,7 @@
           </svg>
 
           <!-- back -->
-          <svg class="face" id="back" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg id="back" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
              <g id="Layer_6">
              	<polygon class="st0" points="66.5,364.5 13.5,364.5 13.5,379.5 30.5,379.5 30.5,421.5 49.5,421.5 49.5,379.5 66.5,379.5 	"/>
@@ -288,7 +288,7 @@
           </svg>
 
           <!-- right -->
-          <svg class="face" id="right" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg id="right" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
              <g id="Layer_6">
              	<polygon class="st0" points="66.5,364.5 13.5,364.5 13.5,379.5 30.5,379.5 30.5,421.5 49.5,421.5 49.5,379.5 66.5,379.5 	"/>
@@ -419,7 +419,7 @@
           </svg>
 
           <!-- left -->
-          <svg class="face" id="left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg id="left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
              <g id="Layer_6">
              	<polygon class="st0" points="66.5,364.5 13.5,364.5 13.5,379.5 30.5,379.5 30.5,421.5 49.5,421.5 49.5,379.5 66.5,379.5 	"/>
@@ -550,7 +550,7 @@
           </svg>
 
           <!-- top -->
-          <svg class="face" id="top" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg id="top" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
              <g id="Layer_6">
              	<polygon class="st0" points="66.5,364.5 13.5,364.5 13.5,379.5 30.5,379.5 30.5,421.5 49.5,421.5 49.5,379.5 66.5,379.5 	"/>
@@ -681,7 +681,7 @@
           </svg>
 
           <!-- bottom -->
-          <svg class="face" id="bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg id="bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
              <g id="Layer_6">
              	<polygon class="st0" points="66.5,364.5 13.5,364.5 13.5,379.5 30.5,379.5 30.5,421.5 49.5,421.5 49.5,379.5 66.5,379.5 	"/>
@@ -814,10 +814,13 @@
       </main> <!-- end scene -->
     </div>
     <aside class="left">
-      <p>next</p>
+      <p onClick="switchFace()">next</p>
+    </aside>
+    <aside class="center">
+      <p onClick="switchFace()">next</p>
     </aside>
     <aside class="right">
-      <p>next</p>
+      <p onClick="switchFace()">next</p>
     </aside>
   </body>
 

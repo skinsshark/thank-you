@@ -1,6 +1,15 @@
 /* SVG SHIT */
-.st0{fill:none;stroke:#FF36B3;stroke-miterlimit:10;}
-.st1{fill:#FF36B3;stroke:#FF36B3;stroke-miterlimit:10;}
+.st0 {
+  fill: none;
+  stroke: #FF36B3;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #FF36B3;
+  stroke: #FF36B3;
+  stroke-miterlimit: 10;
+}
 
 * {
   box-sizing: border-box;
@@ -9,11 +18,12 @@
 p {
   font-size: 2rem;
   font-family: 'Concert One', cursive;
+  cursor: crosshair;
 }
 
 @media only screen and (max-width: 767px) {
     p {
-      font-size: 1rem;
+      font-size: 2rem;
     }
 }
 
@@ -41,16 +51,12 @@ main {
   transition: transform 1s;
 }
 
-.face {
-  opacity: 0.2;
-}
-
-.show-front #front.face,
-.show-right #right.face,
-.show-back #back.face,
-.show-left #left.face,
-.show-top #top.face,
-.show-bottom #bottom.face {
+.show-front #front,
+.show-right #right,
+.show-back #back,
+.show-left #left,
+.show-top #top,
+.show-bottom #bottom {
   opacity: 1;
 }
 
@@ -58,6 +64,7 @@ svg {
   position: absolute;
   width: 500px;
   height: 500px;
+  opacity: 0.2;
 }
 
 svg#front  { transform: rotateY(  0deg) translateZ(100px); }
@@ -84,10 +91,8 @@ svg#bottom { transform: rotateX(-90deg) translateZ(100px); }
   }
 }
 
-aside,
-aside.right {
+aside {
   position: absolute;
-  right: 10vw;
   top: 0;
   height: 100vh;
   display: flex;
@@ -102,11 +107,26 @@ aside.left {
   color: #14ffbc;
 }
 
-aside p,
-aside.right p {
+aside.center {
+  height: 95vh;
+  color: #ffc444;
+  display: flex;
+  align-items: flex-end;
+  display: none;
+}
+
+aside.right {
+  right: 10vw;
+}
+
+aside p {
   text-align: center;
   letter-spacing: 2px;
   transform: rotate(-90deg);
+}
+
+aside.center p {
+  transform: rotate(0);
 }
 
 aside.left p {
@@ -115,7 +135,18 @@ aside.left p {
 
 @media only screen and (max-width: 767px) {
   aside.left,
+  aside.center,
   aside.right {
-    display: none;
+    position: absolute;
+    height: auto;
+    bottom: 20vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  aside.left p,
+  aside.center p,
+  aside.right p {
+    transform: rotate(0);
   }
 }
