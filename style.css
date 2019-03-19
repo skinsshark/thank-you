@@ -1,12 +1,25 @@
 /* SVG SHIT */
-.st0{fill:#FFFFFF;stroke:#FF36B3;stroke-miterlimit:10;}
-.st1{fill:#FF36B3;stroke:#FF36B3;stroke-miterlimit:10;}
-.st2{fill:#FF36B3;}
+#front .st0{fill:#FFFFFF;stroke:#FF36B3;stroke-miterlimit:10;}
+#front .st1{fill:#FF36B3;stroke:#FF36B3;stroke-miterlimit:10;}
+#front .st2{fill:#FF36B3;}
 
-.mv-to-dir-id .st0{fill:#FFDF1D;stroke:#2784B8;stroke-miterlimit:10;}
-.mv-to-dir-id .st1{fill:#FFFFFF;stroke:#2784B8;stroke-miterlimit:10;}
-.mv-to-dir-id .st2{fill:#2784B8;stroke:#2784B8;stroke-miterlimit:10;}
-.mv-to-dir-id .st3{fill:#2784B8;}
+/* temp */
+#top .st0, #right .st0, #left .st0{fill:#FFDF1D;stroke:#2784B8;stroke-miterlimit:10;}
+#top .st1, #right .st1, #left .st1{fill:#FFFFFF;stroke:#2784B8;stroke-miterlimit:10;}
+#top .st2, #right .st2, #left .st2{fill:#2784B8;stroke:#2784B8;stroke-miterlimit:10;}
+#top .st3, #right .st3, #left .st3{fill:#2784B8;}
+
+#bottom .st0{fill:#9B1F2B;}
+#bottom .st1{fill:#294066;}
+#bottom .st2{fill:#FFFFFF;}
+#bottom .st3{fill:#A31A2E;}
+#bottom .st4{fill:none;}
+
+#back .st0{fill:#B70000;}
+#back .st1{fill:#FFFFFF;}
+#back .st2{fill:#000900;}
+#back .st3{fill:#008335;}
+#back .st4{fill:#05702C;}
 
 * {
   box-sizing: border-box;
